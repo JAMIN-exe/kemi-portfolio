@@ -1,11 +1,11 @@
 export const sizes = [
   "10 x 12 inches",
-  "12 x 16 in (A3)",
-  "16 x 20 in (A2)",
-  "18 x 24 in",
-  "20 x 28 in",
-  "24 x 36 in (A1)",
-  "34 x 46 in (A0)",
+  "12 x 16 inches (A3)",
+  "16 x 20 inches (A2)",
+  "18 x 24 inches",
+  "20 x 28 inches",
+  "24 x 36 inches (A1)",
+  "34 x 46 inches (A0)",
 ]
 
 const prints = [
