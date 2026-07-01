@@ -149,7 +149,7 @@ export default function Home() {
       {allLoaded && (
         <section className={styles.videoSection}>
           <video
-            src="/public/images/Video-Project-2.webm"
+            src="/images/Video-Project-2.webm"
             autoPlay
             muted
             loop
