@@ -1,6 +1,36 @@
+import { useState } from "react";
 import styles from "./About.module.css";
 
 export default function About() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("");
+
+  async function handleSubscribe() {
+    if (!email) return;
+    setStatus("loading");
+    try {
+      const response = await fetch("https://api.brevo.com/v3/contacts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "api-key": import.meta.env.VITE_BREVO_API_KEY,
+        },
+        body: JSON.stringify({
+          email,
+          listIds: [2],
+          updateEnabled: true,
+        }),
+      });
+      if (response.ok || response.status === 204) {
+        setStatus("success");
+        setEmail("");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
@@ -17,10 +47,10 @@ export default function About() {
           <div className={styles.rule} />
           <div className={styles.statement}>
             <p>
-              Kemi Taiwo (b. 1996) is a photographer and digital artist based in Lagos,
-              Nigeria, who utilizes visual storytelling as a profound medium for
-              self-expression. Historically drawn to the poetic depth and
-              nostalgia of black-and-white portraiture, Taiwo has recently
+              Kemi Taiwo (b. 1996) is a photographer and digital artist based in
+              Lagos, Nigeria, who utilizes visual storytelling as a profound
+              medium for self-expression. Historically drawn to the poetic depth
+              and nostalgia of black-and-white portraiture, Taiwo has recently
               expanded her practice into mixed-media digital collage and
               photo-illustration.
             </p>
@@ -92,9 +122,21 @@ export default function About() {
                 type="email"
                 placeholder="Your email address"
                 className={styles.input}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
-              <button className={styles.button}>Subscribe</button>
+              <button className={styles.button} onClick={handleSubscribe}>
+                {status === "loading" ? "Subscribing..." : "Subscribe"}
+              </button>
             </div>
+            {status === "success" && (
+              <p className={styles.successMsg}>You're subscribed!</p>
+            )}
+            {status === "error" && (
+              <p className={styles.errorMsg}>
+                Something went wrong. Try again.
+              </p>
+            )}
           </div>
 
           <div className={styles.socials}>

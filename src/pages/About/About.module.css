@@ -164,6 +164,22 @@
   color: var(--gold);
 }
 
+.successMsg {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: green;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+}
+
+.errorMsg {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: red;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
