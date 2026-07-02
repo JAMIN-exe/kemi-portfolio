@@ -27,6 +27,8 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  overflow-y: auto;
+  height: calc(100vh - 60px);
 }
 
 .label {
@@ -59,11 +61,11 @@
 }
 
 .statement p {
-  font-size: 1.55rem;
-  line-height: 1.8;
+  font-size: 1.24rem;
+  line-height: 1.9;
   color: var(--text);
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .connect {
