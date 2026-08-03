@@ -73,6 +73,11 @@ const allImages = [
   "71",
   "72p",
   "73p",
+  "74p",
+  "75p",
+  "76",
+  "77p",
+  "78p",
 ];
 
 const BATCH = 20;
