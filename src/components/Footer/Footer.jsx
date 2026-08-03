@@ -8,7 +8,7 @@ export default function Footer() {
         <p className={styles.credit}>
           Designed & Developed by{' '}
           <a
-            href="https://github.com/JAMIN-exe"
+            href="https://benjamintaiwodev.netlify.app/"
             target="_blank"
             rel="noreferrer"
             className={styles.creditLink}
