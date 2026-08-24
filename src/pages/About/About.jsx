@@ -93,6 +93,15 @@ export default function About() {
               >
                 PhotoVogue
               </a>
+              . In 2026, her first published interview about her photography practice was featured by {" "}
+              <a
+                href="https://www.psp-culture.com/visual-art/a-window-into-another-world/"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
+                People's Stories Project
+              </a>
               . She is also a member of Black Women Photographers.
             </p>
             <p>
