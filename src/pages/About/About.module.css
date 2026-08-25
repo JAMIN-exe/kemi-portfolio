@@ -185,6 +185,7 @@
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
 
   .imageCol {
@@ -195,6 +196,8 @@
 
   .textCol {
     padding: 2rem 1.5rem;
+    height: auto;
+    overflow-y: visible;
   }
 
   .connectInner {

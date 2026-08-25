@@ -39,6 +39,9 @@ export default function About() {
             src="/images/kemi-potrait.webp"
             alt="Kemi Taiwo"
             className={styles.portrait}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
         <div className={styles.textCol}>

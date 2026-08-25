@@ -121,6 +121,7 @@ export default function Home() {
                 src={`/images/${name}.webp`}
                 alt="Kemi Taiwo — Lagos photographer and digital artist, fine art portrait and collage work"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           );
