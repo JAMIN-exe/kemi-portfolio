@@ -58,15 +58,6 @@ export default function About() {
               photo-illustration.
             </p>
             <p>
-              By merging her original photography with graphic elements, she
-              creates layered, symbolic works that bridge the gap between
-              reality and imagination. Her recent practice often features
-              high-contrast monochromatic subjects set against vibrant,
-              celestial backdrops, employing visual metaphors to explore themes
-              of identity, memory, liberation, and the relationship between
-              people and their environment.
-            </p>
-            <p>
               Taiwo's work has been exhibited at the 3rd and 5th editions of the
               Photocarrefour Artist Meet and Exhibit in Abuja, Nigeria (2021 and
               2023). In 2023, she was shortlisted for the{" "}
