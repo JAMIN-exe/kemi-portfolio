@@ -141,26 +141,6 @@ export default function About() {
               </p>
             )}
           </div>
-
-          <div className={styles.socials}>
-            <span className={styles.label}>Follow</span>
-            <div className={styles.socialLinks}>
-              <a
-                href="https://www.instagram.com/shotbyktaiwo/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Instagram
-              </a>
-              <a
-                href="https://www.behance.net/kemitaiwo"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Behance
-              </a>
-            </div>
-          </div>
         </div>
       </section>
     </main>
