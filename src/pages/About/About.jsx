@@ -36,7 +36,7 @@ export default function About() {
       <section className={styles.hero}>
         <div className={styles.imageCol}>
           <img
-            src="/images/kemi-potrait.webp"
+            src="/images/kemi-potrait.jpeg"
             alt="Kemi Taiwo"
             className={styles.portrait}
             loading="eager"
